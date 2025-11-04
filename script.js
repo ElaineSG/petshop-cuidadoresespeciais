@@ -1,4 +1,3 @@
-
 "use strict";
 // ==============================================
 // 1. INTERFACES - NOSSAS "FICHAS DE CADASTRO"
@@ -60,7 +59,7 @@ function criarAnimal(nome, especie, idade, peso, cor, raca, dono, observacoes = 
 function agendarServico(servico) {
     servicos.push(servico);
     atualizarContadores();
-    return ✅ Serviço de ${servico.tipo} agendado para ${servico.data} às ${servico.horario};
+    return `✅ Serviço de ${servico.tipo} agendado para ${servico.data} às ${servico.horario}`;
 }
 function calcularPrecoTotal() {
     let total = 0;
@@ -207,7 +206,7 @@ function processarCadastroAnimal() {
                     <strong>Dono:</strong> ${novoAnimal.dono}
                 </div>
             </div>
-            ${observacoes ? <p><strong>Observações:</strong> ${observacoes}</p> : ''}
+            ${observacoes ? `<p><strong>Observações:</strong> ${observacoes}</p>` : ''}
             <p><strong>ID:</strong> ${novoAnimal.id}</p>
             <p><strong>Vacinado:</strong> ${novoAnimal.vacinado ? '✅ Sim' : '❌ Não'}</p>
             <p><strong>Data do Cadastro:</strong> ${novoAnimal.ultimaVisita}</p>
@@ -399,7 +398,7 @@ function mostrarServicos() {
             `;
         });
     }
-    html += </div>;
+    html += `</div>`;
     resultado.innerHTML = html;
 }
 function vacinarAnimais() {
