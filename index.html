@@ -1,63 +1,62 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetShop Amigo Fiel</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>🐾 PetShop Amigo Fiel</h1>
-            <p class="subtitle">Sistema desenvolvido pelo Grupo Cuidadores Especiais</p>
-        </header>
+<!DOCTYPE html><!--Declaração do tipo de documento-->
+<html lang="pt-br"><!--Define o idioma como português do Brasil-->
+<head><!--Início do cabeçalho-->
+    <meta charset="UTF-8"><!--Define a codificação de caracteres como UTF-8-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Configura a viewport para responsividade-->
+    <title>PetShop Amigo Fiel</title><!--Tag de título da página no navegador-->
+    <link rel="stylesheet" href="style.css"><!--Link para o arquivo CSS externo-->
+</head><!--Fim do cabeçalho-->
+<body><!--Início do corpo do documento-->
+  <div class="container"><!--Div principal com a classe "container"-->
+        <header><!--Início do cabeçalho da página-->
+            <h1><!--Título principal com um emoji-->
+                🐾 PetShop Amigo Fiel</h1><!--fechamento do título principal-->
+            <p class="subtitle"><!-- inclusão de parágrafo na página com a classe "subtitle"-->Sistema desenvolvido pelo Grupo Cuidadores Especiais</p><!--fechamento da tag parágrafo--> 
+        </header><!--Fim do cabeçalho da página-->
         
-        <div class="cards-info">
-            <div class="card">
-                <h3>Animais Cadastrados</h3>
-                <span class="numero" id="total-animais">0</span>  
-            </div>
-            <div class="card">
-                <h3>Serviços Agendados</h3>
-                <span class="numero" id="total-servicos">0</span>
-            </div>
-        </div>
+      <div class="cards-info"><!--Div para cartões de informação com a classe "cards-info"--> 
+            <div class="card"><!--Div para um cartão com a classe "card"--> 
+                <h3>Animais Cadastrados</h3><!--subtítulo 3--> 
+              <span class="numero" id="total-animais"><!--contêiner com a classe "numero e a id "total-animais-->0</span><!--fechamento da tag do contêiner-->   
+            </div><!--fechamento da div class card 1--> 
+            <div class="card"><!--Div para um cartão com a classe "card"--> 
+                <h3><!--subtítulo tamanho 3-->Serviços Agendados</h3><!--fechamento do subtítulo--> 
+              <span class="numero" id="total-servicos"><!--cointêiner com a classe "numero" e a id "total-servicos"-->0</span><!--fechamento da tag do contêiner--> 
+            </div><!--fechamento da div class card 2--> 
+        </div><!--fechamento da div class cards-info--> 
 
-        <div class="area-resultados" id="resultado">
-            🐾 Bem-vindo ao sistema! Clique nos botões abaixo.
-        </div>
+        <div class="area-resultados" id="resultado"><!--Div para área de resultados com a classe "area-resultados" e a id "resultado"-->😊 Bem-vindo ao sistema! Clique nos botões abaixo. 
+        </div><!--fechamento da div class area-resultados e id resultado--> 
         
-        <div class="botoes">
-            <button onclick="mostrarTipos()">1. Tipos de Animais</button>
-            <button onclick="mostrarAnimais()">2. Exemplo Animais</button>
-            <button onclick="testarFuncoes()">3. Testar Funções</button>
-            <button onclick="mostrarErros()">4. Ver Erros</button>
-            <button onclick="cadastrarAnimal()">5. Cadastrar Animal</button>
-        </div>
+    <div class="botoes"><!--Div para área de botões com a classe "botoes"-->
+            <button onclick="mostrarTipos()"><!--Criação do botão Tipos de Animais-->1. Tipos de Animais</button><!--Fechamento da tag do botão Tipos de Animais-->
+            <button onclick="mostrarAnimais()"><!--Criação do botão Exemplo Animais-->2. Exemplo Animais</button><!--Fechamento da tag do botão Exemplo Animais-->
+            <button onclick="testarFuncoes()"><!--Criação do botão Testar Funções-->3. Testar Funções</button><!--Fechamento da tag do botão Testar Funções-->
+            <button onclick="mostrarErros()"><!--Criação do botão Ver Erros-->4. Ver Erros</button><!--Fechamento da tag do botão Ver Erros-->
+            <button onclick="cadastrarAnimal()"><!--Criação do botão Cadastrar Animal-->5. Cadastrar Animal</button><!--Fechamento da tag do botão Cadastrar Animal-->
+        </div><!--Fechamento da div área de botões-->
 
         <!-- SEÇÃO DE CONTATO -->
-        <div class="contato">
-            <br>
-            <p><strong>Endereço:</strong> R. da Guia, 142 - Recife, PE, 50030-210</p>
-            <p><strong>Telefone:</strong> (81) 99999-8888</p>
-            <p><strong>Horário de Funcionamento:</strong> Seg a Sáb, 8h às 18h</p>
-            <p><strong>Serviços:</strong> Banho, Tosa, Consulta Veterinária, Vacinação, Hotelzinho</p>
-        </div>
+    <div class="contato"><!--Div com a classe contato--> <br><!--quebra de linha-->
+            <p><!--inclusão de parágrafo--><strong><!--estilização do texto do parágafo em negrito-->Endereço:</strong><!--fechamento da tag que estiliza o texto em negrito--> R. da Guia, 142 - Recife, PE, 50030-210</p><!--fechamento da tag do parágrafo-->
+	          <p><!--inclusão de parágrafo--><strong><!--estilização do texto do parágafo em negrito-->Telefone:</strong><!--fechamento da tag que estiliza o texto em negrito--> (81) 99999-8888</p><!--fechamento da tag do parágrafo-->
+	          <p><!--inclusão de parágrafo--><strong><!--estilização do texto do parágafo em negrito-->Horário de Funcionamento:</strong><!--fechamento da tag que estiliza o texto em negrito--> Seg a Sáb, 8h às 18h</p><!--fechamento da tag do parágrafo-->
+	          <p><!--inclusão de parágrafo--><strong><!--estilização do texto do parágafo em negrito-->Serviços:</strong><!--fechamento da tag que estiliza o texto em negrito--> Banho, Tosa, Consulta Veterinária, Vacinação, Hotelzinho</p><!--fechamento da tag do parágrafo-->
+            </div><!--fechamento da div de contato-->
 
         <!-- RODAPÉ -->
-        <footer class="rodape">
-            <div class="rodape-content">
-                <p>Criado pelo grupo cuidadores especiais 2025 🐾🧡</p>
-                <div class="rodape-decoration">
-                    <span>🐕</span>
-                    <span>🐈</span>
-                    <span>🐾</span>
-                </div>
-            </div>
-        </footer>
-    </div>
+        <footer class="rodape"><!--Início da seção do rodapé com a classe "rodape"-->
+            <div class="rodape-content"><!--Div para o conteúdo do rodapé com a classe "rodape-content"-->
+                <p><!--Criação de um parágrafo-->Criado pelo grupo cuidadores especiais 2025 🐾🧡</p><!--Fechamento da tag parágrafo-->
+                <div class="rodape-decoration"><!--Div para decoração do rodapé com a classe "rodape-decoration"-->
+                    <span><!--Área para o ícone de cachorro-->🐕</span><!--Fechamento da área para o ícone de cachorro-->
+                    <span><!--Área para o ícone de gato-->🐈</span><!--Fechamento da área para o ícone de gato-->
+                    <span><!--Área para o ícone de patinhas-->🐾</span><!--Fechamento da área para o ícone de patinhas-->
+                </div><!--Fechamento da div de decoração do rodapé-->
+            </div><!--Fechamento da div de conteúdo do rodapé-->
+        </footer><!--Fim da seção do rodapé-->
+    </div><!--fechamento da div principal-->
 
-    <script src="script.js"></script>
-</body>
-</html>
+  <script src="script.js" defer></script><!--Link para o arquivo JavaScript externo-->
+</body><!--fechamento da tag body, referente ao corpo do documento-->
+</html><!--fechamento da tag HTML-->
