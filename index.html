@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop Amigo Fiel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐾 PetShop Amigo Fiel</h1>
+            <p class="subtitle">Sistema desenvolvido pelo Grupo Cuidadores Especiais</p>
+        </header>
+        
+        <div class="cards-info">
+            <div class="card">
+                <h3>Animais Cadastrados</h3>
+                <span class="numero" id="total-animais">0</span>  
+            </div>
+            <div class="card">
+                <h3>Serviços Agendados</h3>
+                <span class="numero" id="total-servicos">0</span>
+            </div>
+        </div>
+
+        <div class="area-resultados" id="resultado">
+            🐾 Bem-vindo ao sistema! Clique nos botões abaixo.
+        </div>
+        
+        <div class="botoes">
+            <button onclick="mostrarTipos()">1. Tipos de Animais</button>
+            <button onclick="mostrarAnimais()">2. Exemplo Animais</button>
+            <button onclick="testarFuncoes()">3. Testar Funções</button>
+            <button onclick="mostrarErros()">4. Ver Erros</button>
+            <button onclick="cadastrarAnimal()">5. Cadastrar Animal</button>
+        </div>
+
+        <!-- SEÇÃO DE CONTATO -->
+        <div class="contato">
+            <br>
+            <p><strong>Endereço:</strong> R. da Guia, 142 - Recife, PE, 50030-210</p>
+            <p><strong>Telefone:</strong> (81) 99999-8888</p>
+            <p><strong>Horário de Funcionamento:</strong> Seg a Sáb, 8h às 18h</p>
+            <p><strong>Serviços:</strong> Banho, Tosa, Consulta Veterinária, Vacinação, Hotelzinho</p>
+        </div>
+
+        <!-- RODAPÉ -->
+        <footer class="rodape">
+            <div class="rodape-content">
+                <p>Criado pelo grupo cuidadores especiais 2025 🐾🧡</p>
+                <div class="rodape-decoration">
+                    <span>🐕</span>
+                    <span>🐈</span>
+                    <span>🐾</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
